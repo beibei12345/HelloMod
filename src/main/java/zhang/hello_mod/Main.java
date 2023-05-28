@@ -17,6 +17,6 @@ public class Main {
     public static void playerJoinWorld(PlayerEvent.PlayerLoggedInEvent event){
         Player player = event.getPlayer();
         Level level = player.level;
-        player.sendMessage(new TextComponent("hello " + player.getDisplayName().getString() + ". from " + (level.isClientSide() ? "CLIENT" : "SERVER")), Util.NIL_UUID);
+        player.sendMessage(new TextComponent("hi " + player.getDisplayName().getString() + ". from " + (level.isClientSide() ? "CLIENT" : "SERVER")), Util.NIL_UUID);
     }
 }
